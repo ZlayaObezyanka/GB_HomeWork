@@ -23,7 +23,7 @@ a = -9 b = -3 -> max = -3
 //else
 //{
 //    Console.WriteLine($"Максимальное число: {secondNum}");
-//}
+//} // 17 строк 
 
 
 /*
@@ -49,11 +49,10 @@ a = -9 b = -3 -> max = -3
 //thirdNum = int.Parse(Console.ReadLine());
 
 //answer = firstNum > secondNum && firstNum > thirdNum ? firstNum : secondNum; // проверка, 1 число больше второго и 1 число больше 3? 
-
 //answer = secondNum > thirdNum ? answer : thirdNum; // проверка, 2 число больше 3? 
 
 //Console.WriteLine(answer);
-
+//18 строк 
 
 /*
 Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
@@ -77,7 +76,7 @@ a = -9 b = -3 -> max = -3
 //{ 
 //    Console.WriteLine($"Ваше число {value} не является четным");
 //}
-
+//13 строк
 
 
 /*
@@ -102,4 +101,4 @@ for (int i = 0; i < value; ++i)
         Console.Write($"{answer} ");
     }
 }
-
+//14 строк 
