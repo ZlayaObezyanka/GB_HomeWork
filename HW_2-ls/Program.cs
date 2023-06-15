@@ -20,7 +20,6 @@
 //     else{
 //         Console.WriteLine("Вы ввели не 3х-значное число. Го повторно.");
 //     }
-
 // }
 
 
@@ -30,22 +29,20 @@
 // 32679 -> 6
 
 
-// int value = 0;
-// int temp = 0;
-// int i = 0;
 // Random rnd = new Random();
+// int value = rnd.Next(0, 100000);
+// int temp = value;
+// int i = 0;
 
-// value = rnd.Next(0, 100000);
-// temp = value;
-
-// while(true)
+// while (true)
 // {
-//     if(temp > 0)
+//     if (temp > 0)
 //     {
 //         ++i;
 //         temp /= 10;
 //     }
-//     else{ 
+//     else
+//     {
 //         i -= 2;
 //         break;
 //     }
@@ -53,23 +50,24 @@
 
 // temp = value;
 
-// if(i == 0)
+// if (i == 0)
 // {
 //     Console.WriteLine($"{value} -- не хватает разрядов");
 // }
-// else{
-//     while(i >= 0)
-//     {      
-//         if(i == 1)
-//         {   
-//         value %= 10;
+// else
+// {
+//     while (i >= 0)
+//     {
+//         if (i == 1)
+//         {
+//             value %= 10;
+//             Console.WriteLine($"Число{temp}, {value}");
+//             break;
+//         }
+//         value /= 10;
 //         Console.WriteLine($"Число{temp}, {value}");
-//         break;
+//         --i;
 //     }
-//     value /= 10;
-//     Console.WriteLine($"Число{temp}, {value}");
-//     --i;
-// }
 // }
 
 
