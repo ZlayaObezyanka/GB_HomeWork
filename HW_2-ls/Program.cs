@@ -29,46 +29,46 @@
 // 32679 -> 6
 
 
-// Random rnd = new Random();
-// int value = rnd.Next(0, 100000);
-// int temp = value;
-// int i = 0;
+Random rnd = new Random();
+int value = rnd.Next(0, 100000);
+int temp = value;
+int i = 0;
 
-// while (true)
-// {
-//     if (temp > 0)
-//     {
-//         ++i;
-//         temp /= 10;
-//     }
-//     else
-//     {
-//         i -= 2;
-//         break;
-//     }
-// }
+while (true)
+{
+    if (temp > 0)
+    {
+        ++i;
+        temp /= 10;
+    }
+    else
+    {
+        i -= 2;
+        break;
+    }
+}
 
-// temp = value;
+temp = value;
 
-// if (i == 0)
-// {
-//     Console.WriteLine($"{value} -- не хватает разрядов");
-// }
-// else
-// {
-//     while (i >= 0)
-//     {
-//         if (i == 1)
-//         {
-//             value %= 10;
-//             Console.WriteLine($"Число{temp}, {value}");
-//             break;
-//         }
-//         value /= 10;
-//         Console.WriteLine($"Число{temp}, {value}");
-//         --i;
-//     }
-// }
+if (i == 0)
+{
+    Console.WriteLine($"{value} -- не хватает разрядов");
+}
+else
+{
+    while (i >= 0)
+    {
+        if (i == 1)
+        {
+            value %= 10;
+            Console.WriteLine($"Число{temp}, {value}");
+            break;
+        }
+        value /= 10;
+        Console.WriteLine($"Число{temp}, {value}");
+        --i;
+    }
+}
 
 
 

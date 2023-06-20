@@ -59,13 +59,20 @@
 //3 -> 1, 8, 27
 //5 -> 1, 8, 27, 64, 125
 
-Console.WriteLine("Введите интервал кубов: ");
-uint index_cube = uint.Parse(Console.ReadLine());
+// Console.WriteLine("Введите интервал кубов: ");
+// uint index_cube = uint.Parse(Console.ReadLine());
 
-for (int i = 1; i <= index_cube; ++i)
+// for (int i = 1; i <= index_cube; ++i)
+// {
+//     Console.WriteLine($"Куб числа {i} равен {Math.BigMul(i, i) * i}. Помни это сталкер!");
+// }
+
+
+int a = 2000;
+
+if ((a / 10 > 0) && (a / 100 == 0))
 {
-    Console.WriteLine($"Куб числа {i} равен {Math.BigMul(i, i) * i}. Помни это сталкер!");
+    Console.WriteLine("Привет");
 }
-
-
-
+else 
+    Console.WriteLine("Привет-пока");

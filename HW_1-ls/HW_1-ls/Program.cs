@@ -87,18 +87,53 @@ a = -9 b = -3 -> max = -3
  */
 
 
-int value = 0;
-int answer= 0;
+//int value = 0;
+//int answer= 0;
 
-Console.Write("Введите ваше число: ");
-value = int.Parse(Console.ReadLine());
+//Console.Write("Введите ваше число: ");
+//value = int.Parse(Console.ReadLine());
 
-for (int i = 0; i < value; ++i)
+//for (int i = 0; i < value; ++i)
+//{
+//    if (i % 2 == 0)
+//    { 
+//        answer = i;
+//        Console.Write($"{answer} ");
+//    }
+//}
+// //14 строк 
+
+
+
+//Console.Write("Введите число: ");
+//int a = int.Parse(Console.ReadLine()!);
+
+//int b = 1;
+//while (b <= a)
+//{
+//    if (b % 2 == 0)
+//        Console.Write($"{b} ");
+//    b += 1;
+//}
+
+
+uint day = 0;
+
+Console.Write("Введите день недели:");
+day = uint.Parse(Console.ReadLine());
+if (day > 7)
 {
-    if (i % 2 == 0)
-    { 
-        answer = i;
-        Console.Write($"{answer} ");
-    }
+    Console.WriteLine("Ты шо, круглоглазый?!");
 }
-//14 строк 
+else
+{
+    if (day < 6)
+    {
+        Console.WriteLine($"{day} Господа, культурно выпиваем, ведь это ВЫХОДНЫЕ!");
+    }
+    else if (day == 6 && day == 7)
+    {
+        Console.WriteLine($"{day} Культурно выпиваем, но аккуратно. у нас будни");
+    }
+
+}
