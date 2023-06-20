@@ -46,8 +46,6 @@
 //    second_point[i] = int.Parse(Console.ReadLine());
 //}
 
-
-
 //ansver = Math.Sqrt(Math.Pow(second_point[0] - first_point[0], 2) +
 //    Math.Pow(second_point[1] - first_point[1], 2) + Math.Pow(second_point[2] - first_point[2], 2));
 //Console.WriteLine(ansver); 
