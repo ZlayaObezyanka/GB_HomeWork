@@ -6,20 +6,24 @@
 // [3, 7, 23, 12] -> 19
 // [-4, -6, 89, 6] -> 0
 
-{
-int sum = 0;
+// Задача 38: Задайте массив целых двухзначных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+// [22, 42, 15, 77, 65] => 77 - 15 = 62**
 
+
+{
 Random size = new Random();
+
+int sum = 0;
 
 int[] arr = new int [size.Next(5, 10)];
 int[] arr_3task = new int[size.Next(9, 10)];
 
-arr = fillingA_FingArr(arr); // первая домашка
+arr = fillingA_FingArr(arr, 99, 1000); // первая домашка
 sum = sum_not_even(arr); // Второе задание // я не знаю, почему я сделал через инт, понимая, что можно сделать через войд... 
 print(arr);
 
 Console.WriteLine("\n_______________________________________");
-arr_3task = fillingA_FingArr(arr_3task);
+arr_3task = fillingA_FingArr(arr_3task, 9, 100); // третье задание 
 sum = dif(arr_3task);
 print(arr_3task);
 }
@@ -46,13 +50,13 @@ int Even(int[] arr)
 return temp;
 }
 
-int[] fillingA_FingArr(int[] arr) // Заполнение массива, который CERF очень достал
+int[] fillingA_FingArr(int[] arr, int size_min, int size_max) // Заполнение массива, который CERF очень достал
 {
     int temp_num = 0;
     Random temp = new Random();
     for(int i= 0; i < arr.Length; ++i)
     {
-        arr[i] = temp.Next(99, 1000);
+        arr[i] = temp.Next(size_min, size_max);
     }
     temp_num = Even(arr);
     printTasks(temp_num);
@@ -91,6 +95,3 @@ int dif(int[] arr)
 
 return temp;
 }
-
-
-
