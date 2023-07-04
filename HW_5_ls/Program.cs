@@ -28,18 +28,15 @@ sum = dif(arr_3task);
 print(arr_3task);
 }
 
-void print(int[] arr) // Вывод массива, для визуального понимания, с чем мы работаем 
-{
+void print(int[] arr){ // Вывод массива, для визуального понимания, с чем мы работаем 
     Console.Write($"Чертов массив равен: {string.Join(", ", arr)}");
 }
 
-void printTasks(int quantity) // вывод значений
-{
+void printTasks(int quantity){ // вывод значений
     Console.WriteLine($"Значение равно: {quantity}");
 }
 
-int Even(int[] arr)
-{
+int Even(int[] arr){
     int temp = 0;
     for (int i = 0; i < arr.Length; ++i)
     {
@@ -50,8 +47,7 @@ int Even(int[] arr)
 return temp;
 }
 
-int[] fillingA_FingArr(int[] arr, int size_min, int size_max) // Заполнение массива, который CERF очень достал
-{
+int[] fillingA_FingArr(int[] arr, int size_min, int size_max){ // Заполнение массива, который CERF очень достал
     int temp_num = 0;
     Random temp = new Random();
     for(int i= 0; i < arr.Length; ++i)
@@ -64,8 +60,7 @@ int[] fillingA_FingArr(int[] arr, int size_min, int size_max) // Заполне�
 return arr;
 }
 
-int sum_not_even(int[] arr) // сумма на позициях %2 != 0 
-{
+int sum_not_even(int[] arr){ // сумма на позициях %2 != 0 
     int temp = 0;
 
     for(int i = 0; i < arr.Length; ++i)
@@ -79,8 +74,7 @@ int sum_not_even(int[] arr) // сумма на позициях %2 != 0
 return temp;
 }
 
-int dif(int[] arr)
-{
+int dif(int[] arr){
     int max = arr[0];
     int min = arr[0];
     int temp = 0;

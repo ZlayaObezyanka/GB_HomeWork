@@ -111,23 +111,59 @@
 
 // quantity(value);
 
-void Print(int[] arr)
-{
-    Console.Write("[{0}]", string.Join(", ", arr ));
 
-}
-int I_Am_Function(int[] I_am_Num)
+
+//**Задача 40:**Напишите программу, которая принимает на вход три числа и проверяет,
+//может ли существовать треугольник с сторонами такой длины.
+
+//<aside>
+//❗ **Теорема о неравенстве треугольника:**каждая сторона треугольника меньше суммы двух других сторон.
+
+//</aside>
+
+
+//void triangle(int a, int b, int c)
+//{ 
+//    if (a + b - c < a)
+//    {
+//        Console.WriteLine("Всё верно");
+//    }
+//}
+
+//int a = int.Parse(Console.ReadLine());
+//int b = int.Parse(Console.ReadLine());
+//int c = int.Parse(Console.ReadLine());
+
+//triangle(a, b, c);
+
+
+
+
+
+//**Задача 42:**Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+
+//45 -> 101101
+//3 -> 11
+//2 -> 10
+
+
+void bin(int value)
 {
-    Random rnd = new Random();
-    for (int i = 0; i < I_am_Num.Length; ++i)
+    Console.WriteLine($"{Convert.ToString(value, 2)}");
+}
+
+int b = 12;
+
+bin(b);
+
+
+int[] fillingA_FingArr(int[] arr, int size_min, int size_max)
+{ // Заполнение массива, который CERF очень достал
+    Random temp = new Random();
+    for (int i = 0; i < arr.Length; ++i)
     {
-        I_am_Num[i] = rnd.Next(1, 50);
+        arr[i] = temp.Next(size_min, size_max);
     }
-    Print(I_am_Num);
-    return 0;
+
+    return arr;
 }
-
-    Console.Write("курлык");
-    int[] arr = new int[8];
-    I_Am_Function(arr);
-
