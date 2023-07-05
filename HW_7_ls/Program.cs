@@ -53,7 +53,6 @@ namespace program {
             }
             Console.WriteLine();
         }
-
         public void PrintArr(int[,] arr, int average)
         {
             double[] valueMean = new double[arr.GetLength(1)];
@@ -69,7 +68,6 @@ namespace program {
             Console.WriteLine(string.Join(", |", valueMean));
             Console.WriteLine();
         }
-
         public void PrintArr(int[,] arr)
         {
             for (int i = 0; i < arr.GetLength(0); i++)
@@ -99,10 +97,8 @@ namespace program {
             }
             Print printarr = new Print();
             printarr.PrintArr(arr);
-
             return arr;
         }
-
         int[,] GetArr(int x, int y, int average)
         {
             Random random = new Random();
@@ -146,7 +142,6 @@ namespace program {
             printOut.PrintArr(arr, userRow, userColumn);
 
             error_bypass.GetArr(row, column, row);
-
         }
     }
 }
