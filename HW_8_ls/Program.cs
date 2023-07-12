@@ -238,6 +238,7 @@ Random random = new Random();
 int size = random.Next(2, 5);
 int[,,] arr = new int[size, size, size];
 arr = getArr(arr);
+print(arr);
 
 int[,,] getArr(int[,,] arr)
 {
@@ -271,3 +272,22 @@ int[,,] getArr(int[,,] arr)
 
     return arr;
 }
+
+void print(int[,,] arr)
+{
+	for (int i = 0; i < arr.GetLength(0); i++)
+	{
+		for (int j = 0; j < arr.GetLength(1); j++)
+		{
+			for (int k = 0; k < arr.GetLength(2); k++)
+			{
+				Console.Write($"{arr[i, j, k]} ({i}, {j}, {k})");
+			}
+			Console.WriteLine();
+		}
+	}
+
+
+}
+
+
